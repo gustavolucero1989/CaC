@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    color: #fff;    
+}
+
+.main-content {
+    height: 100vh;    
+    position: relative;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/home/background-image.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.titulo {
+    position: absolute;
+    bottom: 125px;
+    left: 125px;
+    z-index: 1;
+    width: 40%;    
+}
+
+.titulo h1 {
+    font-size: 4vw;
+}
+
+.titulo p {
+    font-size: 1.3vw;
+}
+
+.titulo button {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.titulo button:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.art-1 {
+    padding: 20px;
+    font-size: 1.8em;   
+}
+
+.art-1-text {
+    padding: 25px;
+}
+
+.art-2 {
+    padding: 20px;
+}
+
+.art-2-item1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: start;
+    padding: 20px;
+}
+
+.art-2-item1 h2 {
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+
+.art-2-item1 p {
+    font-size: 1.2em;
+}
+
+.art-2-item1 button {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.art-2-item1 button:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.art-2-item2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mio {
+    height: 300px;
+}
+
+
+ 
