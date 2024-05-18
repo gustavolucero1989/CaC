@@ -217,12 +217,12 @@ footer{
 }
 
 /* para el input */
-.grupoNombreError input ,.grupoEmailError input, .grupoMensajeError textarea {
+.grupoNombreError input ,.grupoEmailError input, .grupoMensajeError textarea, .grupoTelefonoError input {
     border: 3px solid #bb2929;
 }
 
 /* para los label */
-.grupoEmailError label,.grupoNombreError label, .grupoMensajeError label {
+.grupoEmailError label,.grupoNombreError label, .grupoMensajeError label, .grupoTelefonoError label {
     color: #bb2929;
 }
 

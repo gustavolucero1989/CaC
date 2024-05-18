@@ -1,4 +1,4 @@
-const formulario = document.getElementById('formulario');
+/*const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input')
 const textarea = document.getElementById('mensaje')
 const select = document.getElementById('select')
@@ -64,9 +64,46 @@ textarea.addEventListener('blur', validarFormulario);
 select.addEventListener('change', validarFormulario);    
 //select.addEventListener('blur', validarFormulario);
 
+ */
 
-        
 
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 });
+
+function validarFormulario() {
+    var nombre = document.getElementById("nombre").value;
+    var correo = document.getElementById("email").value;
+    var telefono = document.getElementById("telefono").value;
+  
+    // Validar nombre
+    if (nombre === "") {
+      alert("Por favor ingrese su nombre.");
+      return false;
+    }
+  
+    // Validar correo electrónico
+    if (correo === "") {
+      alert("Por favor ingrese su correo electrónico.");
+      return false;
+    } else {
+      var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!pattern.test(correo)) {
+        alert("Por favor ingrese un correo electrónico válido.");
+        return false;
+      }
+    }
+  
+  
+    // Validar teléfono
+    if (telefono === "") {
+      alert("Por favor ingrese su número de teléfono.");
+      return false;
+    } else if (isNaN(telefono)) {
+      alert("El número de teléfono debe ser un número.");
+      return false;
+    }
+  
+    // Si todas las validaciones pasan, devuelve true para enviar el formulario
+    return true;
+  }
