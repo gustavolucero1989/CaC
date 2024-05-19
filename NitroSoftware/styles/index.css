@@ -58,10 +58,8 @@ body {
     opacity: 0.8;
 }
 
-@media screen and (max-width: 768px){
-
+@media screen and (max-width: 768px) {
     .titulo {
-        position: absolute;        
         bottom: 50px; 
         left: 50px; 
         width: 80%;      
@@ -74,5 +72,48 @@ body {
     .titulo p {
         font-size: 1.2em;
     }
-    
+}
+
+@media screen and (max-width: 480px) {
+    .titulo {
+        bottom: 30px; 
+        left: 20px; 
+        width: 90%;      
+    }
+
+    .titulo h1 {
+        font-size: 1.5em;
+    }
+
+    .titulo p {
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+    .button {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .titulo {
+        bottom: 150px;
+        left: 150px;
+        width: 35%;
+    }
+
+    .titulo h1 {
+        font-size: 3vw;
+    }
+
+    .titulo p {
+        font-size: 1.5vw;
+        margin-bottom: 60px;
+    }
+
+    .button {
+        padding: 25px;
+        font-size: 1.8em;
+    }
 }

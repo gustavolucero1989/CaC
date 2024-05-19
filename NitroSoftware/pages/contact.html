@@ -16,13 +16,14 @@
       <h1 class="tittle-h1"><a href="../index.html">NitroSoftware</a></h1>
       <ul class="nav-list">
         <li><a href="../pages/home.html">Inicio</a></li>
-        <li><a href="#">Servicios</a></li>
+        <li><a href="../pages/services.html">Servicios</a></li>
         <li><a href="#">Contactanos</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="maps">
+    <h2>Ubicación</h2>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.45340386518!2d-58.51569923050293!3d-34.61565476882243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715557320556!5m2!1ses-419!2sar"
       width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
@@ -37,7 +38,7 @@
           <input type="text" name="nombre" id="nombre">
           <p class="grupoError">Proporciona un nombre correcto, solo puede contener letras y espacios.</p>
         </div>
-        
+
         <div class="grupoEmail">
           <label for="email" class="formulario_email">Correo Electrónico</label>
           <input type="email" name="email" id="email">
@@ -70,7 +71,7 @@
         </div>
 
         <div>
-          <label for="grupoPais">Pais</label>
+          <label class="grupoPais">Pais</label>
           <div>
             <select name="select" id="select">
               <option value="" disabled selected>Seleccione un pais</option>
@@ -107,28 +108,27 @@
 
     <section class="parrafoLateral">
       <div>
-        <p>Envíanos un mensaje y nos comunicaremos contigo tan pronto como podamos.</p>
-        <p>NitroSoftware.</p>
+        <h1>NitroSoftware.</h1>
+        <p>Envíanos un mensaje y nos comunicaremos contigo tan pronto como podamos</p>  
       </div>
     </section>
-
   </section>
 
-</body>
+  <footer class="footer-content">
+    <ul class="foot-list">
+      <li>
+        <a href="https://www.facebook.com"><img src="../assets/icon/facebook.ico" alt="Facebook" /></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com"><img src="../assets/icon/instagram.ico" alt="Instagram" /></a>
+      </li>
+      <li>
+        <a href="https://twitter.com"><img src="../assets/icon/twitter.ico" alt="Twitter" /></a>
+      </li>
+    </ul>
+  </footer>
 
-<footer class="footer-content">
-  <ul class="foot-list">
-    <li>
-      <a href="https://www.facebook.com"><img src="../assets/icon/facebook.ico" alt="Facebook" /></a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com"><img src="../assets/icon/instagram.ico" alt="Instagram" /></a>
-    </li>
-    <li>
-      <a href="https://twitter.com"><img src="../assets/icon/twitter.ico" alt="Twitter" /></a>
-    </li>
-  </ul>
-</footer>
+</body>
 
 <script src="../js/contact.js"></script>
 

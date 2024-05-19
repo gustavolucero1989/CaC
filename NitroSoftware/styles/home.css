@@ -25,6 +25,27 @@ body {
     background-position: center;
 }
 
+.button-home {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-home:hover {
+    opacity: 0.8;
+}
+
+/* Opcional: si quieres que el enlace tenga el mismo estilo que el botón */
+.button-home a {
+    color: rgb(13, 12, 12);
+    text-decoration: none;
+}
+
 .titulo {
     position: absolute;
     bottom: 125px;
