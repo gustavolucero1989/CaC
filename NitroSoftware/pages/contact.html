@@ -1,203 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/common.css" />
-    <link rel="stylesheet" href="../styles/contact.css" />
-    <link rel="icon" type="image/x-icon" href="../assets/icon/favicon.ico" />
-    <title>NitroSoftware</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar-content">
-        <h1 class="tittle-h1"><a href="../index.html">NitroSoftware</a></h1>
-        <ul class="nav-list">
-          <li><a href="../pages/home.html">Inicio</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Contactanos</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <section class="maps">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.45340386518!2d-58.51569923050293!3d-34.61565476882243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715557320556!5m2!1ses-419!2sar"
-        width="800"
-        height="600"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
-    <section class="form_register">
-        <form action="#"  onsubmit= " return validarFormulario()" class="formulario" id="formulario">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/contact.css" />
+  <link rel="icon" type="image/x-icon" href="../assets/icon/favicon.ico" />
+  <title>NitroSoftware</title>
+</head>
 
-            <div class="grupoRegister">
-                
-                <div class="grupoNombre "> <!-- grupoNombreError (referencia para validaciones)-->
-                    <label for="nombre" class="formulario_nombre">Nombre y Apellido</label>
-                    <input type="text" name="nombre" id="nombre">
-                    <p class="grupoError">Proporciona un nombre correcto, solo puede contener letras y espacios.</p> <!--  -->
+<body>
+  <header>
+    <nav class="navbar-content">
+      <h1 class="tittle-h1"><a href="../index.html">NitroSoftware</a></h1>
+      <ul class="nav-list">
+        <li><a href="../pages/home.html">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contactanos</a></li>
+      </ul>
+    </nav>
+  </header>
 
-          <div class="grupoCity">
-            <label for="city" class="formulario_city">Ciudad</label>
-            <input type="text" name="ciudad" id="city" />
-          </div>
+  <section class="maps">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.45340386518!2d-58.51569923050293!3d-34.61565476882243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715557320556!5m2!1ses-419!2sar"
+      width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
 
-                <div class="grupoEmail "> <!--  grupoEmailError-->
-                    <label for="email" class="formulario_email">Correo Electrónico</label>
-                    <input type="email" name="email" id="email">
-                    <p class="grupoError">Proporciona un Correo Electrónico valido</p> <!--  -->
-                </div>
-
-                <div class="grupoTelefono">
-                    <label for="telefono" class="formulario_telefono">Teléfono</label>
-                    <input type="number" name="telefono" id="telefono">
-                    <p class="grupoError">Proporciona un numero de teléfono valido.</p>
-                </div>
-
-          <div class="grupoImagen">
-            <label>Selecciona una imagen:</label>
-            <input type="file" name="imagen" id="imagen" accept="image/*" />
-          </div>
-
-                <div>
-                    <label>¿Desea suscribirse a nuestra Plataforma?</label>
-                    
-                    <span class="grupoCheck">
-                        <input type="checkbox" name="check" id="check" value="check">
-                        <label for="check">Si</label>
-                    </span>
-                </div>
-
-                <div class="grupoImagen">
-                    <label>Selecciona una imagen:</label>
-                    <input type="file" name="imagen" id="imagen" accept="image/*">
-                </div>
-
-                <div>
-                    <label for="grupoPais">Pais</label>
-                    <div>
-                        <select name="select" id="select">
-                            <option value="" disabled selected>Seleccione un pais</option>
-                            <option value="argentina">Argentina</option>
-                            <option value="brasil">Brasil</option>
-                            <option value="uruguay">Uruguay</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="grupoPais">
-                    <label for="otroPais">¿Cuál?</label>
-                    <input type="text" name="otroPais" id="otroPais">
-                </div>
-
-                <div class="grupoMensaje"> <!--  -->
-                    <label for="mensaje" class="msj">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" style="resize: none;"></textarea>
-                    <p class="grupoError">Esta casilla no debe estar vacía</p> <!--  -->
-                </div>
-
-                <div class="grupoEnviar">
-                   
-                    <h5>Este sitio esta protegido por reCAPTCHA y Goggle
-                        <a href="https://policies.google.com/privacy" target="_blank">Politica de privacidad</a> y 
-                        <a href="https://policies.google.com/terms" target="_blank">Términos de servicios</a>
-                    </h5>
-
-                    <!-- <input type="submit" value="Enviar"/> -->
-                    <button type="submit" value="Enviar">Enviar</button>
-
-                    <p class="formularioEnviado">Mensaje enviado exitosamente</p>
-                </div>  
-            
-            </div>
-
-        </form>
-
-        <section class="parrafoLateral">
-            <div>
-              <select name="select" id="select">
-                <option value="" disabled selected>Seleccione un pais</option>
-                <option value="argentina">Argentina</option>
-                <option value="brasil">Brasil</option>
-                <option value="uruguay">Uruguay</option>
-                <option value="otro">Otro</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="grupoPais">
-            <label for="otroPais">¿Cuál?</label>
-            <input type="text" name="otroPais" id="otroPais" />
-          </div>
-
-          <div class="grupoMensaje">
-            <!-- grupoMensajeError -->
-            <label for="mensaje" class="msj">Mensaje</label>
-            <textarea
-              name="mensaje"
-              id="mensaje"
-              style="resize: none"
-            ></textarea>
-            <p class="grupoError">Esta casilla no debe estar vacía</p>
-            <!-- grupoError-incorrecto -->
-          </div>
-
-          <div class="grupoEnviar">
-            <h5>
-              Este sitio esta protegido por reCAPTCHA y Goggle
-              <a href="https://policies.google.com/privacy" target="_blank"
-                >Politica de privacidad</a
-              >
-              y
-              <a href="https://policies.google.com/terms" target="_blank"
-                >Términos de servicios</a
-              >
-            </h5>
-
-            <button type="submit" onclick="verificarCondiciones()">
-              Enviar
-            </button>
-
-            <p class="formularioEnviado">Mensaje enviado exitosamente</p>
-          </div>
+  <section class="form_register">
+    <form action="#" onsubmit=" return validarFormulario()" class="formulario" id="formulario">
+      <div class="grupoRegister">
+        <div class="grupoNombre">
+          <label for="nombre" class="formulario_nombre">Nombre y Apellido</label>
+          <input type="text" name="nombre" id="nombre">
+          <p class="grupoError">Proporciona un nombre correcto, solo puede contener letras y espacios.</p>
         </div>
-      </form>
+        
+        <div class="grupoEmail">
+          <label for="email" class="formulario_email">Correo Electrónico</label>
+          <input type="email" name="email" id="email">
+          <p class="grupoError">Proporciona un Correo Electrónico válido</p>
+        </div>
 
-      <section class="parrafoLateral">
+        <div class="grupoTelefono">
+          <label for="telefono" class="formulario_telefono">Teléfono</label>
+          <input type="number" name="telefono" id="telefono">
+          <p class="grupoError">Proporciona un número de teléfono válido</p>
+        </div>
+
+        <div class="grupoCity">
+          <label for="city" class="formulario_city">Ciudad</label>
+          <input type="text" name="ciudad" id="city">
+        </div>
+
         <div>
-          <p>
-            Envíanos un mensaje y nos comunicaremos contigo tan pronto como
-            podamos.
-          </p>
-          <p>NitroSoftware.</p>
-        </div>
-      </section>
-    </section>
-    <script src="../js/contact.js"></script>
-  </body>
+          <label>¿Desea suscribirse a nuestra Plataforma?</label>
 
-  <footer class="footer-content">
-    <ul class="foot-list">
-      <li>
-        <a href="https://www.facebook.com"
-          ><img src="../assets/icon/facebook.ico" alt="Facebook"
-        /></a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com"
-          ><img src="../assets/icon/instagram.ico" alt="Instagram"
-        /></a>
-      </li>
-      <li>
-        <a href="https://twitter.com"
-          ><img src="../assets/icon/twitter.ico" alt="Twitter"
-        /></a>
-      </li>
-    </ul>
-  </footer>
+          <span class="grupoCheck">
+            <input type="checkbox" name="check" id="check" value="check">
+            <label for="check">Si</label>
+          </span>
+        </div>
+
+        <div class="grupoImagen">
+          <label>Selecciona una imagen:</label>
+          <input type="file" name="imagen" id="imagen" accept="image/*">
+        </div>
+
+        <div>
+          <label for="grupoPais">Pais</label>
+          <div>
+            <select name="select" id="select">
+              <option value="" disabled selected>Seleccione un pais</option>
+              <option value="argentina">Argentina</option>
+              <option value="brasil">Brasil</option>
+              <option value="uruguay">Uruguay</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grupoPais">
+          <label for="otroPais">¿Cuál?</label>
+          <input type="text" name="otroPais" id="otroPais">
+        </div>
+
+        <div class="grupoMensaje">
+          <label for="mensaje" class="msj">Mensaje</label>
+          <textarea name="mensaje" id="mensaje" style="resize: none;"></textarea>
+          <p class="grupoError">Esta casilla no debe estar vacía</p>
+        </div>
+
+        <div class="grupoEnviar">
+          <h5>Este sitio esta protegido por reCAPTCHA y Goggle
+            <a href="https://policies.google.com/privacy" target="_blank">Politica de privacidad</a> y
+            <a href="https://policies.google.com/terms" target="_blank">Términos de servicios</a>
+          </h5>
+
+          <button type="submit" value="Enviar">Enviar</button>
+          <p class="formularioEnviado">Mensaje enviado exitosamente</p>
+        </div>
+      </div>
+    </form>
+
+    <section class="parrafoLateral">
+      <div>
+        <p>Envíanos un mensaje y nos comunicaremos contigo tan pronto como podamos.</p>
+        <p>NitroSoftware.</p>
+      </div>
+    </section>
+
+  </section>
+
+</body>
+
+<footer class="footer-content">
+  <ul class="foot-list">
+    <li>
+      <a href="https://www.facebook.com"><img src="../assets/icon/facebook.ico" alt="Facebook" /></a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com"><img src="../assets/icon/instagram.ico" alt="Instagram" /></a>
+    </li>
+    <li>
+      <a href="https://twitter.com"><img src="../assets/icon/twitter.ico" alt="Twitter" /></a>
+    </li>
+  </ul>
+</footer>
+
+<script src="../js/contact.js"></script>
+
 </html>
