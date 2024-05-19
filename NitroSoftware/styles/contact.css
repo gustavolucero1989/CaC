@@ -1,255 +1,252 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: rgb(46,46,46);
+  background: rgb(46, 46, 46);
 }
 
-.maps iframe{
-    width: 100%;
-    height: 405px;
-    position: relative;
+h2 {
+  color: white;
+  margin: 40px 0 20px 0;
 }
 
+.maps iframe {
+  width: 100%;
+  height: 405px;
+  position: relative;
+}
 
 .form_register {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    width: 100%;
-    margin: 10px;
-    font-family: 'arial';
-    color: white;
-    
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin: 10px;
+  font-family: "arial";
+  color: white;
 }
 
 .formularioEnviado {
-    color: #9de682;
-    display: none;
-    margin-top: 10px;
+  color: #9de682;
+  display: none;
+  margin-top: 10px;
 }
 
 .formularioEnviado {
-    display: none;
+  display: none;
 }
 
 .grupoError {
-    color: red;
-    display: none;
+  color: red;
+  display: none;
 }
 
 input.error {
-    border: 3px solid red;
+  border: 3px solid red;
 }
 
 .grupoRegister {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(2,1fr);
-    grid-auto-rows: minmax(40px,auto);
-    grid-row-gap: 20px;
-    
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(40px, auto);
+  grid-row-gap: 20px;
 }
 
 .grupoRegister div {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .grupoRegister label {
-    padding-bottom: 5px;
-    font-size: 15px;
-    cursor: pointer;
+  padding-bottom: 5px;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .grupoRegister input {
-    border-radius: 10px;
-    background-color: rgb(63, 61, 61);
-    height: 40px;
-    font-size: 17px;
-    color: white;
-    border: 2px solid transparent; 
-    transition: .3s ease all;
+  border-radius: 10px;
+  background-color: rgb(63, 61, 61);
+  height: 40px;
+  font-size: 17px;
+  color: white;
+  border: 2px solid transparent;
+  transition: 0.3s ease all;
 }
 
 .grupoRegister input:focus {
-    border: 3px solid #2e3741;
-    outline: none;
-    box-shadow: 2px 0px 15px grey  ;
-
+  border: 3px solid #2e3741;
+  outline: none;
+  box-shadow: 2px 0px 15px grey;
 }
 
 .grupoRegister p {
-    padding-top: 5px;
-    font-size: 12px;
+  padding-top: 5px;
+  font-size: 12px;
 }
 
-
 #imagen {
-    font-size: 15px;
-    background-color: rgb(46,46,46);
-    box-shadow: none;
-    border: none;
+  font-size: 15px;
+  background-color: rgb(46, 46, 46);
+  box-shadow: none;
+  border: none;
 }
 
 .grupoCheck {
-    display: inline-block;
-    vertical-align: middle; 
+  display: inline-block;
+  vertical-align: middle;
 }
-  
+
 .grupoCheck input[type="checkbox"] {
-    vertical-align: middle; 
-    margin-right: 5px; 
+  vertical-align: middle;
+  margin-right: 5px;
 }
-  
+
 .grupoCheck label {
-    vertical-align: middle; 
+  vertical-align: middle;
 }
 
 #select {
-    background-color: rgb(63, 61, 61);
-    height: 40px;
-    border-radius: 10px;
-    font-size: 17px;
-    color: white;
-    border-style: none;
-    cursor: pointer;
-    border: 2px solid transparent; 
+  background-color: rgb(63, 61, 61);
+  height: 40px;
+  border-radius: 10px;
+  font-size: 17px;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  border: 2px solid transparent;
 }
 
 #select:focus {
-    border: 3px solid #2e3741;
-    outline: none;
-    box-shadow: 2px 0px 15px grey;
+  border: 3px solid #2e3741;
+  outline: none;
+  box-shadow: 2px 0px 15px grey;
 }
 
 .grupoMensaje {
-    height: 210px;
-    padding: 20px 0 15px 0;
-    grid-column: span 2;
+  height: 210px;
+  padding: 20px 0 15px 0;
+  grid-column: span 2;
 }
 
 .grupoMensaje label {
-    padding-bottom: 5px;
-    cursor: pointer;
+  padding-bottom: 5px;
+  cursor: pointer;
 }
 
-.grupoMensaje textarea{
-    height: 150px;
-    padding: 5px;
-    border-radius: 10px;
-    border-style: none;
-    background-color: rgb(63, 61, 61);
-    font-size: 17px;
-    color: white;
-    border: 2px solid transparent; 
+.grupoMensaje textarea {
+  height: 150px;
+  padding: 5px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgb(63, 61, 61);
+  font-size: 17px;
+  color: white;
+  border: 2px solid transparent;
 }
 
 .grupoMensaje textarea:focus {
-    border: 3px solid #2e3741;
-    outline: none;
-    box-shadow: 2px 0px 15px grey;
+  border: 3px solid #2e3741;
+  outline: none;
+  box-shadow: 2px 0px 15px grey;
 }
 
 .grupoMensaje p {
-    padding-top: 5px;
-    font-size: 12px;
+  padding-top: 5px;
+  font-size: 12px;
 }
 
 .grupoEnviar {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    grid-column: 1/ span 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / span 2;
 }
 
 .grupoEnviar button {
-    width: 120px;
-    height: 35px;
-    grid-column: 2;
-    background-color: rgb(168, 157, 157);
-    border-style: none;
-    border-radius: 7px;
-    justify-self: end;
-    cursor: pointer;
-    transition: .1s ease all;
+  width: 120px;
+  height: 35px;
+  grid-column: 2;
+  background-color: rgb(168, 157, 157);
+  border-style: none;
+  border-radius: 7px;
+  justify-self: end;
+  cursor: pointer;
+  transition: 0.1s ease all;
 }
 
-.grupoEnviar button:hover{
-    box-shadow: 3px 0px 8px rgb(102, 101, 101);
+.grupoEnviar button:hover {
+  box-shadow: 3px 0px 8px rgb(102, 101, 101);
 }
 
 .grupoEnviar h5 {
-    width: 60%;
-    padding-top: 5px;
-    color:  white;
+  width: 60%;
+  padding-top: 5px;
+  color: white;
 }
 
 .grupoEnviar a {
-    color: rgb(190, 166, 166);
-    text-decoration: none;
+  color: rgb(190, 166, 166);
+  text-decoration: none;
 }
 
 .grupoEnviar p {
-    font-size: 12px;
-    grid-column: 2/2;
-   color: #9de682;
+  font-size: 12px;
+  grid-column: 2/2;
+  color: #9de682;
 }
 
-.parrafoLateral div{
-    padding:15%;
-    font-family: 'arial';
-    font-size: 20px;
+.parrafoLateral div {
+  padding: 15%;
+  font-family: "arial";
+  font-size: 20px;
 }
 
 .parrafoLateral p {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-@media screen and (max-width:768px){
-    .maps{
-        height: auto;
-    }
+@media screen and (max-width: 768px) {
+  .maps {
+    height: auto;
+  }
 
-    .form_register {
-        grid-template-columns: 1fr;
-    }
+  .form_register {
+    grid-template-columns: 1fr;
+  }
 
-    #formulario{
-        padding: 0;
-    }
+  #formulario {
+    padding: 0;
+  }
 
-    .grupoRegister{
-        width: auto;
-        grid-template-columns: 1fr;
-    }
-    
-    .grupoRegister div{
-        width: 95%;
-        margin: auto;
-    }
+  .grupoRegister {
+    width: auto;
+    grid-template-columns: 1fr;
+  }
 
-    .grupoMensaje {
-        grid-column: 1 / span 1;
-        align-items: center;
-    }
+  .grupoRegister div {
+    width: 95%;
+    margin: auto;
+  }
 
-    .grupoEnviar{
-        grid-column: 1/ span 1;
-        align-items: center;
-    }
+  .grupoMensaje {
+    grid-column: 1 / span 1;
+    align-items: center;
+  }
 
-    .grupoEnviar button {
-        width: 100px;
-        
-    }
+  .grupoEnviar {
+    grid-column: 1 / span 1;
+    align-items: center;
+  }
 
-    .parrafoLateral div{
-        padding: 10%;
-        font-size: 18px;
-    }
+  .grupoEnviar button {
+    width: 100px;
+  }
 
+  .parrafoLateral div {
+    padding: 10%;
+    font-size: 18px;
+  }
 }
-
