@@ -169,7 +169,7 @@ input.error {
   width: 120px;
   height: 35px;
   grid-column: 2;
-  background-color: rgb(168, 157, 157);
+  background-color: rgb(255, 255, 255);
   border-style: none;
   border-radius: 7px;
   justify-self: end;
